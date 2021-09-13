@@ -2,6 +2,8 @@
 <html>
 <head>
 <meta charset="utf-8">
+<!--Bootstrap CSS-->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
 <link rel="stylesheet" type="text/css" href="CSS/calculadora.css">
 <title>Calculadora</title>
 </head>
@@ -21,5 +23,39 @@
     </div>
   </header>
 </div>
+
+<table class="calculadora">
+  <tr>
+    <td colspan="4"><span id="resultado"></span></td>
+  </tr>
+  <tr>
+    <td colspan="2"><button id="clean" style="width: 148px;">Clean</button></td>
+    <td><button id="division">/</button></td>
+    <td><button id="multiplicacion">*</button></td>
+  </tr>
+  <tr>
+    <td><button id="siete">7</button></td>
+    <td><button id="ocho">8</button></td>
+    <td><button id="nueve">9</button></td>
+    <td><button id="resta">-</button></td>
+  </tr>
+  <tr>
+    <td><button id="cuatro">4</button></td>
+    <td><button id="cinco">5</button></td>
+    <td><button id="seis">6</button></td>
+    <td><button id="suma">+</button></td>
+  </tr>
+  <tr>
+    <td><button id="uno">1</button></td>
+    <td><button id="dos">2</button></td>
+    <td><button id="tres">3</button></td>
+    <td rowspan="2"><button id="enter" style="height: 140px;">Enter</button></td>
+  </tr>
+  <tr>
+    <td><button id="cero">0</button></td>
+    <td><button id="punto">.</button></td>
+  </tr>
+</table>
+
 </body>
 </html>
