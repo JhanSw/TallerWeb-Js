@@ -1,4 +1,4 @@
-var operandoa;
+/*var operandoa;
 var operandob;
 var operacion;
 
@@ -23,7 +23,7 @@ function init(){
     var cero = document.getElementById("cero");
     var punto = document.getElementById("punto");
 
-    //Eventos
+    //Eventos de click
     uno.onclick = function(e){
         resultado.textContent = resultado.textContent + "1";
     }
@@ -54,34 +54,84 @@ function init(){
     cero.onclick = function(e){
         resultado.textContent = resultado.textContent + "0";
     }
+    punto.onclick = function(e){
+        resultado.textContent = resultado.textContent + ".";
+    }
     suma.onclick = function(e){
-        resultado.textContent = resultado.textContent + "+";
         operandoa = resultado.textContent;
         operacion = "+";
-        //clean();
+        
+        //resetear();
+        sumando();
+    }
+    function sumando(){
+        resultado.textContent = "+"
+        //resultado.textContent = resultado.textContent + "+";
+        //resetear();
     }
     resta.onclick = function(e){
-        resultado.textContent = resultado.textContent + "-";
         operandoa = resultado.textContent;
+
         operacion = "-";
-        //clean();
+        restando();
+    }
+    function restando(){
+        resultado.textContent = resultado.textContent + "-";
     }
     division.onclick = function(e){
-        resultado.textContent = resultado.textContent + "/";
+        //resultado.textContent = resultado.textContent + "/";
         operandoa = resultado.textContent;
         operacion = "/";
-        //clean();
+        resetear();
     }
     multiplicacion.onclick = function(e){
-        resultado.textContent = resultado.textContent + "*";
+        //resultado.textContent = resultado.textContent + "*";
         operandoa = resultado.textContent;
         operacion = "*";
-        //clean();
+        resetear();
     }
 
-    //Mas eventos
     clean.onclick = function(e){
-        clean();
+        limpiar();
     }
 
+    enter.onclick = function(e){
+        operandob = resultado.textContent;
+        resolver();
+        /*if(e.key === 'Enter'){
+            resolver(e);
+        }
+    }
+
+    function resetear(){
+        resultado.textContent = "";
+    }
+
+    function limpiar(){
+        resultado.textContent = "";
+        operandoa = 0;
+        operandob = 0;
+        operacion = "";
+    }
+
+    function resolver(){
+        var res = 0;
+        switch(operacion){
+            case "+":
+                res = parseFloat(operandoa) + parseFloat(operandob);
+                break;
+            case "-":
+                res = parseFloat(operandoa) - parseFloat(operandob);
+                break;
+            case "*":
+                res = parseFloat(operandoa) * parseFloat(operandob);
+                break;
+            case "/":
+                res = parseFloat(operandoa) / parseFloat(operandob);
+                break;
+        }
+        limpiar();
+        resultado.textContent = res;
+    }
 }
+*/
