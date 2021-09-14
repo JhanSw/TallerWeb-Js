@@ -96,6 +96,11 @@
 	font-family: Cambria;
 	margin-bottom: 5px;
 }
+
+/*Fondo */
+body{
+	background-color: #FEC47B;
+}
 /*
   #resultado{
 	  display: block;
