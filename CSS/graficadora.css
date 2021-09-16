@@ -58,3 +58,8 @@
   body{
 	background-color: #FEC47B;
 }
+
+.contenedor {
+	max-width: 60%;
+	margin: auto;
+}
