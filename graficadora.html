@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<link rel="stylesheet" type="text/css" href="CSS/graficadora.css">
-<title>Graficadora</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="CSS/graficadora.css">
+  <title>Graficadora</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
 </head>
 <body>
 <!-- Barra de navegación-->
@@ -20,6 +21,42 @@
       </nav>
     </div>
   </header>
+
+  <canvas id="Migrafica" width='300' height='300'></canvas>
 </div>
 </body>
+
+<script>
+  var ctx = document.getElementById("Migrafica").getContext("2d");
+  var Mygraf = new Chart(ctx,{
+      type:"bar",
+
+      data:{
+        
+        labels:['col1', 'col2', 'col3'],
+        datasets:[{
+          label:'Mis datos',
+          data:[15, 8, 20],
+          backgroundColor:[
+            'rgb(255, 195, 0, 0.70)',
+            'rgb(199, 0, 57, 0.90)',
+            'rgb(218, 247, 166)'
+          ]
+        }]
+      },
+
+      options:{
+        scales:{
+          yAxes:[{
+            ticks:{
+              beginAtZero:true
+            }
+          }]
+        }
+      }
+    
+
+  })
+</script>
+
 </html>
