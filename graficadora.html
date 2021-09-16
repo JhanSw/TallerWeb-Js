@@ -2,9 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="CSS/graficadora.css">
   <title>Graficadora</title>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+  
 </head>
 <body>
 <!-- Barra de navegación-->
@@ -20,43 +21,21 @@
           </ul>
       </nav>
     </div>
-  </header>
+</header>
 
-  <canvas id="Migrafica" width='300' height='300'></canvas>
-</div>
+<main class="contenedor"> <!-- Donde va a contener la graficadora.-->
+  <h1 align="center" class="display-4">
+      Chart.js
+  </h1>
+    <div class="row mt-5"> <!-- Filas -->
+      <div class="col"> <!-- Columnas -->
+        <canvas id="Migrafica" width="4" height="2"></canvas>
+
+      </div>
+    </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+<script src="JS/graficadora.js"></script>
 </body>
-
-<script>
-  var ctx = document.getElementById("Migrafica").getContext("2d");
-  var Mygraf = new Chart(ctx,{
-      type:"bar",
-
-      data:{
-        
-        labels:['col1', 'col2', 'col3'],
-        datasets:[{
-          label:'Mis datos',
-          data:[15, 8, 20],
-          backgroundColor:[
-            'rgb(255, 195, 0, 0.70)',
-            'rgb(199, 0, 57, 0.90)',
-            'rgb(218, 247, 166)'
-          ]
-        }]
-      },
-
-      options:{
-        scales:{
-          yAxes:[{
-            ticks:{
-              beginAtZero:true
-            }
-          }]
-        }
-      }
-    
-
-  })
-</script>
-
 </html>
