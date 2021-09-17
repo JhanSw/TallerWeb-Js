@@ -1,3 +1,15 @@
+/*resultado.onkeydown (function(e){
+    if(e.keyCode === 13){
+        document.calculator.ans.value=eval(document.calculator.ans.value);
+    }
+})*/
+/*
+enter.keydown(function(e){
+    if(e.keycode === 13){
+        document.calculator.ans.value=eval(document.calculator.ans.value);
+    }
+})
+
 /*var operandoa;
 var operandob;
 var operacion;

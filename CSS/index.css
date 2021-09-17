@@ -54,9 +54,14 @@
   nav ul li a:hover::before {
 	width: 100%;
   }
-
-  div{
-	  width: 50%;
+.grafico{
+	display: inline-block;
+	width: 50%;
+	  border: solid;
+}
+  .cuadro{
+	  display: inline-block;
+	  width: 49%;
 	  border: solid;
   }
 

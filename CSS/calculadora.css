@@ -61,10 +61,11 @@
 	  display: block;
 	  margin: 0 auto;
 	  padding: 20px;
-	  background-color: #1b0d86;
+	  background-color: #E62013;
 	  width: 342px;
 	  height: 410px;
 	  border-radius: 25px;
+	  box-shadow: 15px 10px 0px 0px #010A17;
   }
 
   .calculadora input[type=textfield]{
@@ -78,6 +79,8 @@
 
 
 #button{
+	cursor: pointer;
+	background-color: #E62013;
 	  display: inline-block;
 	  width: 72px;
 	  height: 50px;
@@ -85,9 +88,14 @@
 	  font-weight: bold;
 	  font-family: Cambria;
 	  margin-bottom: 5px;
+	  border: none;
+	  box-shadow: 5px 5px 10px 3px #010A17, -5px -5px 15px 3px #9A2013;
+	  
   }
 
   #button_2{
+	cursor: pointer;
+	background-color: #E62013;
 	display: inline-block;
 	width: 100%;
 	height: 50px;
@@ -95,8 +103,13 @@
 	font-weight: bold;
 	font-family: Cambria;
 	margin-bottom: 5px;
+	border: none;
 }
 
+#pantalla{
+	background-color: black;
+	color: white;
+}
 /*Fondo */
 body{
 	background-color: #FEC47B;
