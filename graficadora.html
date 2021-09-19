@@ -25,13 +25,15 @@
 
 <main class="contenedor"> <!-- Donde va a contener la graficadora.-->
   <h1 allign="center" class="display-4">
-      Chart.js
+      Graficadora
   </h1>
-  <label for="data">Meta los datos: </label>
+  <h3 class="display-6">Separar datos y nombres con comas ",".</h2>
+  <label for="data">Datos ☻</label>
   <input id='data' type="text" >
-  <label for="labels">Meta las labels: </label>☻
+  <label for="labels">Etiquetas o Labels ☻</label>
   <input id='labels' type="text" >
-  <button id='botoncochino'>Hola</button>
+  <button id='botonmain'>Graficar</button>
+  <input type="button" value="Actualizar" onclick="location.reload()"/>
     <div class="row mt-5"> <!-- Filas -->
       <div class="col"> <!-- Columnas -->
         <canvas id="Migrafica" width="4" height="2"></canvas>

@@ -1,7 +1,7 @@
 var ctx = document.getElementById('Migrafica').getContext('2d');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const boton = document.getElementById('botoncochino')
+    const boton = document.getElementById('botonmain')
     boton.addEventListener('click', () => {
         const labels = document.getElementById('labels')
         const data = document.getElementById('data')
@@ -14,22 +14,22 @@ document.addEventListener('DOMContentLoaded', () => {
             data: {
                 labels: listaLabels,
                 datasets: [{
-                    label: 'Domesticos',
+                    label: 'Datos',
                     data: listaData,
                     backgroundColor: [
-                        'rgba(255, 99, 132, 0.2)',
-                        'rgba(54, 162, 235, 0.2)',
-                        'rgba(28, 27, 23, 0.2)',
-                        'rgba(75, 192, 192, 0.2)'
+                        'rgba(21, 67, 96, 0.7)',
+                        'rgba(120, 40, 31, 0.7)',
+                        'rgba(28, 27, 23, 0.5)'
+                        
                     ],
                     borderColor: [
-                        'rgba(255, 99, 132, 1)',
-                        'rgba(54, 162, 235, 1)',
-                        'rgba(28, 27, 23, 1)',
-                        'rgba(75, 192, 192, 1)'
+                        'rgba(21, 67, 96, 1)',
+                        'rgba(120, 40, 31, 1)',
+                        'rgba(28, 27, 23, 1)'
                     ],
                     borderWidth: 2
-                }]
+                    
+                }],
             },
             options: {
                 scales: {
