@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="CSS/graficadora.css">
+  <title>Graficadora de Torta</title>
+  
+</head>
+<body>
+<!-- Barra de navegación-->
+
+<header class="header">
+  
+  <nav id="menu">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Graficadora</a>
+        <ul>
+          <li><a href="graficadoralinea.html">Gráfica de Línea</a></li>
+          <li><a href="graficadorabarra.html">Gráfica de Barras</a></li>
+          <li><a href="graficadoratorta.html">Gráfica de Torta</a></li>
+        </ul>
+      </li>
+      <li><a href="calculadora.html">Calculadora</a></li>
+    </ul>
+    </nav>
+  </header>
+
+<main class="contenedor"> <!-- Donde va a contener la graficadora.-->
+  <h1 allign="center" class="display-4">
+      Graficadora de Torta
+  </h1>
+  <h3 class="display-6">Separar datos y nombres con comas ",".</h2>
+  <label for="data">Datos, valores porcentuales.</label>
+  <input id='data' type="text" >
+  <label for="labels">Etiquetas o Labels</label>
+  <input id='labels' type="text" >
+  <button id='botonmain'>Graficar</button>
+  <input type="button" value="Actualizar" onclick="location.reload()"/>
+    <div class="row mt-5"> <!-- Filas -->
+      <div class="col"> <!-- Columnas -->
+        <canvas id="Migrafica" width="4" height="2"></canvas>
+
+      </div>
+    </div>
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.js"></script>
+<script src="JS/graficadoratorta.js"></script>
+</body>
+</html>
